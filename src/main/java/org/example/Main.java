@@ -11,14 +11,15 @@ public class Main {
 
         Staff staff = new Staff(2,"peter","James","09033210661","No 2 Ajoke Lagos",Gender.MALE);
         System.out.println(staff);
-        Customer cus1 = new Customer("john","josh","09044535355","kdxvbwm sd ", Gender.FEMALE,300);
+        Customer cus1 = new Customer("john","josh","09044535355","kdxvbwm sd ", Gender.FEMALE,600);
 
-        System.out.println(cus1);
+        //System.out.println(cus1);
 
         Product product1 = new Product(ProductTypes.BREAD,540);
         Product product2 = new Product(ProductTypes.DRUGS, 700);
-        System.out.println(product2);
+        //System.out.println(product2);
 
+        System.out.println(cus1.buyProduct(product1));
 
 
 

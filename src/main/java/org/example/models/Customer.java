@@ -35,6 +35,9 @@ public class Customer extends Person implements BuyProductInterface {
 
     @Override
     public String buyProduct(Product product) {
-        if(this.money <= )
+        if(this.money >= product.getPrice()){
+            return "Product Bought Successfully!";
+        } else
+        return "Insufficient Fund! ";
     }
 }
