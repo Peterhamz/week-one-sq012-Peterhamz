@@ -8,6 +8,7 @@ public abstract class Person {
     private String phoneNumber;
     private String address;
     private Gender gender;
+    private Address addresses;
 
     public Person() {
     }
@@ -60,6 +61,19 @@ public abstract class Person {
         this.gender = gender;
     }
 
+    public Person(Address addresses) {
+        this.addresses = addresses;
+    }
+
+    public Address getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(Address addresses) {
+        this.addresses = addresses;
+    }
+
+
     @Override
     public String toString() {
         return "Person{" +
@@ -67,7 +81,8 @@ public abstract class Person {
                 ", lastName='" + lastName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address='" + address + '\'' +
-                ", gender='" + gender + '\'' +
+                ", gender=" + gender +
+                ", addresses=" + addresses +
                 '}';
     }
 }
