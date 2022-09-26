@@ -1,16 +1,18 @@
 package org.example.models;
 
-public class Person {
+import org.example.enums.Gender;
+
+public abstract class Person {
     private String firstName;
     private String lastName;
     private String phoneNumber;
     private String address;
-    private String gender;
+    private Gender gender;
 
     public Person() {
     }
 
-    public Person(String firstName, String lastName, String phoneNumber, String address, String gender) {
+    public Person(String firstName, String lastName, String phoneNumber, String address, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -50,11 +52,11 @@ public class Person {
         this.address = address;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 

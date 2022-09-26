@@ -1,12 +1,25 @@
 package org.example.models;
 
-public class Manager extends Person{
+
+import org.example.enums.Gender;
+
+public class Manager extends Staff{
 
 
     public Manager() {
     }
 
-    public Manager(String firstName, String lastName, String phoneNumber, String address, String gender) {
-        super(firstName, lastName, phoneNumber, address, gender);
+    public Manager(int id) {
+        super(id);
     }
+
+    public Manager(int id, String firstName, String lastName, String phoneNumber, String address, Gender gender) {
+        super(id, firstName, lastName, phoneNumber, address, gender);
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{}" + super.toString();
+    }
+
 }
