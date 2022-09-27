@@ -9,7 +9,7 @@ public class Main {
         Address add1 = new Address(22,"Ajoke","Gbagada","Lagos","Nigeria");
         Staff staff = new Staff(2,"peter","James","09033210661","no 1 Joke Salako Gbagada",Gender.MALE);
         System.out.println(staff);
-        Customer cus1 = new Customer("john","josh","09044535355","kdxvbwm sd ", Gender.FEMALE,600);
+        Customer cus1 = new Customer("John","josh","09044535355","kdxvbwm sd ", Gender.FEMALE,60);
 
         //System.out.println(cus1);
 
@@ -24,6 +24,12 @@ public class Main {
         Manager manager = new Manager(1,"Samson","Holafo","08067894768","7, New way Layout Abuja",Gender.MALE);
 
         System.out.println(manager.hierCashier(app1));
+
+
+        Cashier cashier = new Cashier(77,"Faith","Okolo","09073628263","6 holand Street Jos ",Gender.FEMALE);
+        System.out.println();
+        System.out.println("*********************************");
+        System.out.println(cashier.sellProduct(cus1,product1));
 
 
     }

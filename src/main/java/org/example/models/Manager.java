@@ -36,6 +36,6 @@ public class Manager extends Staff implements HeirCashierInterface {
                     "meet the criteria for this position. Please try again later.");
         }
 
-        return false;
+        return true;
     }
 }

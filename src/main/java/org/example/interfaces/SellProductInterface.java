@@ -1,2 +1,8 @@
-package org.example.interfaces;public interface SellProductInterface {
+package org.example.interfaces;
+
+import org.example.models.Customer;
+import org.example.models.Product;
+
+public interface SellProductInterface {
+    String sellProduct(Customer customer, Product product);
 }
