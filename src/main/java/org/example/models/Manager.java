@@ -24,18 +24,18 @@ public class Manager extends Staff implements HeirCashierInterface {
     }
 
     @Override
-    public boolean hierCashier(Applicant applicant) {
+    public String hierCashier(Applicant applicant) {
         if (applicant.getGender() == Gender.FEMALE && applicant.getIsExperienced().equals("TRUE")) {
 
-            System.out.println("Hello " +applicant.getFirstName() + ", ");
+            return "Hello " + applicant.getLastName() + ", " + "You have been successfully employed for the position of a Cashier. Welcome onboard!";
 
-            System.out.print("You have been successfully employed for the position of a Cashier. Welcome onboard!");
-        }
-            else {
-            System.out.println("Hello "  + applicant.getFirstName() + ", " + "we are sorry to inform you that you didn't " +
+        } else
+            System.out.println("Hello "  + applicant.getLastName() + ", " + "we are sorry to inform you that you didn't " +
                     "meet the criteria for this position. Please try again later.");
-        }
 
-        return true;
+
+        return "Hello "  + applicant.getLastName() + ", " + "we are sorry to inform you that you didn't " +
+                "meet the criteria for this position. Please try again later.";
     }
+
 }
